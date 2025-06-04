@@ -32,20 +32,20 @@ int main() {
 
         
         if (choice == 1) {
-            printf("Your current balance is ₹%.2f\n", balance);
+            printf("Your current balance is Rupees %.2f\n", balance);
         }
         else if (choice == 2) {
-            printf("Enter amount to deposit: ₹");
+            printf("Enter amount to deposit: Rupees");
             scanf("%f", &deposit);
             if (deposit > 0) {
                 balance += deposit;
-                printf("₹%.2f deposited successfully.\n", deposit);
+                printf("Rupees %.2f deposited successfully.\n", deposit);
             } else {
                 printf("Invalid amount!\n");
             }
         }
         else if (choice == 3) {
-            printf("Enter amount to withdraw: ₹");
+            printf("Enter amount to withdraw: Rupees");
             scanf("%f", &withdraw);
             if (withdraw > balance) {
                 printf("Insufficient balance!\n");
@@ -53,7 +53,7 @@ int main() {
                 printf("Invalid amount!\n");
             } else {
                 balance -= withdraw;
-                printf("₹%.2f withdrawn successfully.\n", withdraw);
+                printf("Rupees%.2f withdrawn successfully.\n", withdraw);
             }
         }
         else if (choice == 4) {
