@@ -1,4 +1,6 @@
-    #include <stdio.h>
+// calculator
+   
+#include <stdio.h>
 
 float add(float a, float b);
 float subtract(float a, float b);
